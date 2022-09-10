@@ -76,7 +76,7 @@ app.post('/', urlencodedParser, function(req, res) {
 
 
             } else {
-              res.statusMessage = "Your Api Key is not active. Please send an email to support@zuluapp.io";
+              res.statusMessage = "Your API Key is not active. Please send an email to support@zuluapp.io";
               res.status(400).end();
             }
 
@@ -134,4 +134,4 @@ function createReward (userEmail, currency, totalPurchase, reward){
 
 // Init server
 app.listen(port)
-console.log('API escuchando en el puerto ' + port)
+console.log('API listening on: ' + port)
